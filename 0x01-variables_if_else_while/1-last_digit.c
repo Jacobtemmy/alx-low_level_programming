@@ -1,28 +1,30 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+
 /**
- * main - The Last Digit Programmer
- * Return: 0 (Successful)
+ * main - Last Digit
+ * Return: 0 Success
  */
 int main(void)
 {
-int n;
-srand(time(0));
-n = rand() - RAND_MAX / 2;
-int m;
-m = n % 10;
-if (m > 5)
-{
-printf("Last digit of %d is %d and is greater than 5\n", n, m);
-}
-else if (m == 0)
-{
-printf("Last digit of %d is %d and is 0\n", n, m);
-}
-else
-{
-printf("Last digit of %d is %d and is less than 6\n", n, m);
-}
-return (0);
+	int n;
+
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	int a = n % 10;
+
+	if (a > 5)
+	{
+	printf("Last digit of %d is %d and is greater than 5\n", n, a);
+	}
+	else if (a == 0)
+	{
+	printf("Last digit of %d is %d and is 0\n", n, a);
+	}
+	else
+	{
+	printf("Last digit of %d is %d and is less than 6 and not 0\n", n, a);
+	}
+	return (0);
 }
