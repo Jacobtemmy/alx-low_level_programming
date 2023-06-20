@@ -1,7 +1,6 @@
 #include "main.h"
 /**
- * Function - A function to print alphabets
- * Return: 0 Success
+ * print_alphabet - prints alphabets in lowercase, followed by newline
  */
 void print_alphabet(void)
 {
