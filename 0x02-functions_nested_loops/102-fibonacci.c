@@ -5,14 +5,15 @@
  */
 int main(void)
 {
-	int a = 1, b = 2, c, i = 3;
+	long int a = 1, b = 2, c;
+	int i = 3;
 
-	printf("%d, %d, ", a, b);
+	printf("%ld, %ld, ", a, b);
 
 	while (i <= 50)
 	{
 		c = a + b;
-		printf("%d", c);
+		printf("%ld", c);
 		if (i != 50)
 		{
 			printf(", ");
