@@ -12,7 +12,7 @@ j = 0;
 while (j < 10)
 {
 result = i * j;
-if (j == 0)
+if (j == 0 && result < 10)
 {
 _putchar(result + '0');
 }
