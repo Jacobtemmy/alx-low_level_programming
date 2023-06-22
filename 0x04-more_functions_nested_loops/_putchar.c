@@ -1,4 +1,4 @@
-#include "main.h"
+#include <unistd.h>
 /**
  * _putchar - Program to output
  * @c: Character
