@@ -4,14 +4,17 @@
  */
 void more_numbers(void)
 {
-	int a,b;
+	int row, col;
 
-	for (a = 0; a <= 10; a++)
+	for (row = 0; row <= 9; row++)
 	{
-		for (b = 0; b <= 14; b++)
+		for (col = 0; col <= 14; col++)
 		{
-			_putchar('0' + b / 10);
-			_putchar('0' + b % 10);
+			if (col >= 10)
+			{
+				_putchar(col / 10 + '0');
+			}
+		_putchar(col % 10 + '0');
 		}
 	_putchar('\n');
 	}

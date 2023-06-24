@@ -1,0 +1,20 @@
+#include "main.h"
+/**
+ * more_numbers - More numbers
+ */
+void more_numbers(void)
+{
+	int row, col, num;
+
+	for (row = 0; row < 9; row++)
+	{
+		for (col = 0; col < 20; col++)
+		{
+			if 
+			num = col + row * 20;
+			_putchar(num / 10 + '0');
+			_putchar(num % 10 + '0');
+		}
+	_putchar('\n');
+	}
+}
