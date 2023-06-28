@@ -9,7 +9,7 @@ int main(void)
 	int limit = 4000000;
 	int sum = 0, temp;
 
-	while (a <= 4000000)
+	while (a <= limit)
 	{
 		if (a % 2 == 0)
 		{
