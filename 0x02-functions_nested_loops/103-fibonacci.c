@@ -5,29 +5,20 @@
  */
 int main(void)
 {
-	int a = 1, b = 2, c;
-	int i = 0;
+	int a = 1, b = 2;
+	int limit = 4000000;
+	int sum = 0, temp;
 
-	printf("%d, %d, ", a, b);
-	c = a + b;
-	while (c < 4000000)
+	while (a <= 4000000)
 	{
-		while (i < c)
+		if (a % 2 == 0)
 		{
-			if (c % 2 == 0)
-			{
-				printf("%d", c);
-				if (c != 4000000)
-				{
-					printf(", ");
-				}
-			}
-		i++;
+			sum += a;
 		}
-	c++;
-	i = c + 1;
+	temp = a + b;
 	a = b;
-	b = c;
+	b = temp;
 	}
+printf("%d\n", sum);
 return (0);
 }
