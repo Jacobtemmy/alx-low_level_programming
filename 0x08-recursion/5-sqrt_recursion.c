@@ -17,9 +17,9 @@ int _sqrt_recursion_help(int n, int start, int end)
 		return (mid);
 	}
 	else if (start >= end)
-        {
+	{
 		return (-1);
-        }
+	}
 	else if (mid_sqr < n)
 	{
 		return (_sqrt_recursion_help(n, mid + 1, end));
