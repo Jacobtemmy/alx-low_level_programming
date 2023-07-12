@@ -13,6 +13,10 @@ char *str_concat(char *s1, char *s2)
 	size_t len2 = strlen(s2);
 	char *p;
 
+	if (s1 == 0 || s2 == 0)
+	{
+		return (0);
+	}
 	p = malloc(len1 + len2 + 1);
 	if (p == 0)
 	{
