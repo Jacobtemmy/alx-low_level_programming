@@ -18,6 +18,10 @@ char *_strdup(char *str)
 	{
 		return (0);
 	}
+	if (strcpy(p, str) == 0)
+	{
+		return (0);
+	}
 	strcpy(p, str);
 	return (p);
 }
