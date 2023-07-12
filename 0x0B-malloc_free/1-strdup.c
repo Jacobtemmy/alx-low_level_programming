@@ -8,17 +8,20 @@
  */
 char *_strdup(char *str)
 {
-	char *p = (char *) malloc(strlen(str) + 1);
+	size_t len;
+	char *p;	
 
 	if (str == 0)
 	{
 		return (0);
 	}
-	if (p == 0)
+	len = strlen(str);
+	if (len == 0)
 	{
 		return (0);
 	}
-	if (strcpy(p, str) == 0)
+	p = malloc(len + 1);
+	if (p == 0)
 	{
 		return (0);
 	}
