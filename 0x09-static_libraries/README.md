@@ -1,1 +1,1 @@
-Static Libraries 
+STATIC LIBRARIES
