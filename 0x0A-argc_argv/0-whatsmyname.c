@@ -1,14 +1,19 @@
 #include <stdio.h>
-#include <stdlib.h>
 /**
- * main - A program to print the name of the file
- * @argc: argument count
- * @argv: argument
- * Return: 0 Success
+ * main - A program that prints its name
+ * Return: Always 0
+ * @argc: A count
+ * @argv: An argument
  */
 int main(int argc, char *argv[])
 {
-	(void)argc;
-	printf("%s\n", argv[0]);
-	return (0);
+	if (argc > 0)
+	{
+		printf("%s\n", argv[0]);
+	}
+	else
+	{
+		printf("Program name not available");
+	}
+return (0);
 }
